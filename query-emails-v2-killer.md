@@ -44,7 +44,7 @@ Congrats on the promotion to Scripted TV Lit — perfect timing, because I've go
 
 A Catholic parish in a dying steel town forms a vigilante group. They will only inflict justice the Bible allows. Their disguises come from the nativity play costume closet. Their "holy water" is sometimes gasoline.
 
-DOUGHNUT SUNDAY is a 54-page one-hour dramedy pilot — Parks and Rec meets The Righteous Gemstones. I grew up in this world. The steel town. The church. The characters who'd absolutely form a paramilitary organization if the homily went long enough. This one's personal.
+DOUGHNUT SUNDAY is a 54-page one-hour dramedy pilot — Parks and Rec meets The Righteous Gemstones. I grew up in a Catholic steel town — the kind where the mill closed but the bars didn't, and everybody's grandmother made the best nut roll. This isn't research. This is memory.
 
 I have a full series bible with a 10-episode season arc. WME and CAA both previously expressed interest in my work. Four polished projects across TV and features.
 
@@ -155,7 +155,7 @@ Verve's reputation for championing original voices is why I'm writing to you spe
 
 A Catholic parish in a rust-belt steel town forms a vigilante group. The rules: only justice the Bible explicitly allows. The results: nativity-costume disguises, a second collection plate funding covert ops, and "holy water" that's sometimes gasoline.
 
-DOUGHNUT SUNDAY is a 54-page one-hour dramedy pilot. Parks and Rec meets The Righteous Gemstones. This world is personal to me — I grew up in it. I have a full series bible with a 10-episode season arc that goes from the first botched mission to a converted gang member kneeling in agony at mass while the parishioners weep tears of joy.
+DOUGHNUT SUNDAY is a 54-page one-hour dramedy pilot. Parks and Rec meets The Righteous Gemstones. I grew up in a Catholic steel town — the kind where the mill closed but the bars didn't, and Friday fish fries were sacred. This isn't research. This is memory. I have a full series bible with a 10-episode season arc that goes from the first botched mission to a converted gang member kneeling in agony at mass while the parishioners weep tears of joy.
 
 CAA and WME previously expressed interest in my work. Four polished projects spanning TV and features.
 
@@ -177,7 +177,7 @@ Everyone remembers *that kid* from high school. The one on a permanent crash cou
 
 Benji, 18. Fresh off house arrest. Friends leaving for college. Psychotic girlfriend. A stabbing that's "not a 911 kind of stabbing, more of a quiet Sunday night kind of stabbing." An abandoned house in the woods. And a city-wide scavenger hunt that ends with a hundred-foot bridge jump off a moving train.
 
-114 pages. Stand By Me meets Superbad. Raw, visceral, and somehow hopeful. The kind of indie feature that haunts you after you leave the theater.
+114 pages. Stand By Me meets Superbad. I grew up with kids like Benji — in a town where the options were college, the military, or the slow fade. This is that story, told raw and real. The kind of indie feature that haunts you after you leave the theater.
 
 WME and CAA previously expressed interest in my work. Four polished scripts across genres. This one's the gut-punch.
 
