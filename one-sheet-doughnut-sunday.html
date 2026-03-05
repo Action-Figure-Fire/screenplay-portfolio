@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOUGHNUT SUNDAY — One Sheet</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #0a0a0a;
+    color: #e8e8e8;
+    min-height: 100vh;
+  }
+  
+  .page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 50px;
+    background: linear-gradient(180deg, #0f0f0f 0%, #1a1a1a 100%);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .page::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #c9a84c, #f0d078, #c9a84c);
+  }
+  
+  .badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #c9a84c;
+    border: 1px solid #c9a84c;
+    padding: 6px 16px;
+    margin-bottom: 30px;
+  }
+  
+  h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 8px;
+    color: #ffffff;
+    letter-spacing: -1px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    font-weight: 300;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #888;
+    margin-bottom: 40px;
+  }
+  
+  .logline {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #c9a84c;
+    border-left: 3px solid #c9a84c;
+    padding-left: 20px;
+    margin-bottom: 40px;
+    font-style: italic;
+  }
+  
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 12px;
+  }
+  
+  .synopsis {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #ccc;
+    margin-bottom: 35px;
+  }
+  
+  .synopsis p { margin-bottom: 16px; }
+  
+  .details-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding: 25px;
+    background: rgba(201, 168, 76, 0.05);
+    border: 1px solid rgba(201, 168, 76, 0.15);
+  }
+  
+  .detail-item .label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #666;
+    margin-bottom: 4px;
+  }
+  
+  .detail-item .value {
+    font-size: 15px;
+    font-weight: 500;
+    color: #e8e8e8;
+  }
+  
+  .comps {
+    margin-bottom: 40px;
+  }
+  
+  .comp-tags {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .comp-tag {
+    font-size: 13px;
+    font-weight: 500;
+    color: #c9a84c;
+    background: rgba(201, 168, 76, 0.1);
+    border: 1px solid rgba(201, 168, 76, 0.25);
+    padding: 6px 14px;
+    border-radius: 2px;
+  }
+  
+  .episodes {
+    margin-bottom: 40px;
+  }
+  
+  .episode-item {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #aaa;
+    padding: 8px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+  }
+  
+  .episode-item strong { color: #e8e8e8; }
+  
+  .footer {
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .writer-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #fff;
+  }
+  
+  .contact {
+    font-size: 13px;
+    color: #888;
+    text-align: right;
+  }
+
+  @media print {
+    body { background: white; }
+    .page { 
+      background: white; 
+      color: #1a1a1a;
+      padding: 40px;
+    }
+    .page::before { background: #333; }
+    h1 { color: #000; }
+    .logline { color: #333; border-color: #333; }
+    .synopsis { color: #444; }
+    .detail-item .value { color: #1a1a1a; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  
+  <div class="badge">Television Pilot</div>
+  
+  <h1>DOUGHNUT<br>SUNDAY</h1>
+  <div class="subtitle">One-Hour Dramedy Pilot &bull; 54 Pages</div>
+  
+  <div class="logline">
+    When church parishioners get fed up with the crime in their small town, they form a vigilante group, inflicting justice according to what the Bible allows them — what could possibly go wrong?
+  </div>
+  
+  <div class="details-grid">
+    <div class="detail-item">
+      <div class="label">Format</div>
+      <div class="value">One-Hour Pilot (54 pp)</div>
+    </div>
+    <div class="detail-item">
+      <div class="label">Genre</div>
+      <div class="value">Dramedy / Dark Comedy</div>
+    </div>
+    <div class="detail-item">
+      <div class="label">Setting</div>
+      <div class="value">Small-town steel country</div>
+    </div>
+    <div class="detail-item">
+      <div class="label">Tone</div>
+      <div class="value">Comedic with dramatic depth</div>
+    </div>
+  </div>
+  
+  <div class="comps">
+    <div class="section-label">Comparable Titles</div>
+    <div class="comp-tags">
+      <span class="comp-tag">Parks and Recreation</span>
+      <span class="comp-tag">The Righteous Gemstones</span>
+      <span class="comp-tag">Justified</span>
+      <span class="comp-tag">Fargo</span>
+    </div>
+  </div>
+  
+  <div class="section-label">Synopsis</div>
+  <div class="synopsis">
+    <p>DOUGHNUT SUNDAY is a multi-layered dramedy set in a "still in the '50s" steel town where a Catholic parish decides to take the law into their own hands — strictly within biblical guidelines, of course.</p>
+    
+    <p>For <strong>Holden and Mary Catherine</strong>, it's a coming-of-age story. Their backgrounds couldn't be more different, yet they ask the same question: "What's next?" For <strong>Mrs. Opal</strong>, it's survival — her husband's at war, her daughter's growing up, and her neighborhood's falling apart. If she doesn't hold it together, her husband won't have anything to come back to.</p>
+    
+    <p>The pilot plays heavily on the church's tropes, witnessed through Holden's eyes. He acts as the lens of society, picking the low-hanging fruit without considering the roots that made it possible — slowly morphing to see the beauty while still laughing at the absurdity.</p>
+    
+    <p>And for everyone else? It's pure comedy. Sit back and watch the dumpster fire — full of all religions, cultures, and societies — burn gloriously together.</p>
+  </div>
+  
+  <div class="episodes">
+    <div class="section-label">Series Potential — Season One Threads</div>
+    <div class="episode-item"><strong>The Vigilantes for Jesus</strong> realize the Bible is too restricting. Solution: outsource the dirty work to the Presbyterians.</div>
+    <div class="episode-item"><strong>After one of them gets injured</strong> by the local gang, they take their fight to city council. An utter failure. So they put the masks back on — only to find the Mayor's neighborhood is gated.</div>
+    <div class="episode-item"><strong>Holden befriends Mr. Opal</strong>, leading the audience to believe he's headed for the military — only to discover it's the church that ends up calling him, after finding a book of St. Augustine.</div>
+    <div class="episode-item"><strong>A converted gang member</strong> kneels to pray at mass. It physically tortures him. The parishioners weep happy tears as he writhes in pain.</div>
+  </div>
+  
+  <div class="footer">
+    <div class="writer-name">[NAME]</div>
+    <div class="contact">[EMAIL]<br>[PHONE]</div>
+  </div>
+  
+</div>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>[NAME] — Screenwriter</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+  
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  :root {
+    --bg: #0a0a0a;
+    --surface: #111;
+    --border: rgba(255,255,255,0.08);
+    --text: #e0e0e0;
+    --muted: #888;
+    --accent: #c9a84c;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 30px;
+    position: relative;
+  }
+  
+  .hero::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    height: 80px;
+    background: linear-gradient(to bottom, transparent, var(--accent));
+  }
+  
+  .hero-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 20px;
+  }
+  
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 6vw, 64px);
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+    letter-spacing: -1px;
+  }
+  
+  .hero-sub {
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--muted);
+    max-width: 500px;
+    line-height: 1.7;
+  }
+  
+  .hero-sub strong {
+    color: var(--text);
+    font-weight: 500;
+  }
+  
+  /* PROJECTS */
+  .projects {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 100px 30px;
+  }
+  
+  .projects-header {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  
+  .projects-header h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .projects-header p {
+    color: var(--muted);
+    font-size: 15px;
+  }
+  
+  .project-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    padding: 50px;
+    margin-bottom: 30px;
+    transition: border-color 0.3s;
+    cursor: default;
+  }
+  
+  .project-card:hover {
+    border-color: rgba(201, 168, 76, 0.3);
+  }
+  
+  .project-meta {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-tag {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  
+  .project-tag.genre {
+    color: var(--accent);
+    border-color: rgba(201, 168, 76, 0.3);
+  }
+  
+  .project-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
+  .project-logline {
+    font-size: 17px;
+    font-style: italic;
+    color: var(--accent);
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  
+  .project-synopsis {
+    font-size: 15px;
+    color: #aaa;
+    line-height: 1.8;
+    max-width: 700px;
+  }
+  
+  .project-synopsis p { margin-bottom: 12px; }
+  
+  .project-comps {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .comp {
+    font-size: 12px;
+    color: var(--muted);
+    background: rgba(255,255,255,0.04);
+    padding: 4px 10px;
+    border-radius: 2px;
+  }
+  
+  /* ABOUT */
+  .about {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 100px 30px;
+    text-align: center;
+  }
+  
+  .about h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 24px;
+  }
+  
+  .about p {
+    font-size: 16px;
+    color: #aaa;
+    line-height: 1.8;
+    margin-bottom: 16px;
+  }
+  
+  .about .highlight {
+    color: var(--accent);
+    font-weight: 500;
+  }
+  
+  /* CONTACT */
+  .contact {
+    text-align: center;
+    padding: 80px 30px;
+    border-top: 1px solid var(--border);
+  }
+  
+  .contact h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  
+  .contact p {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 24px;
+  }
+  
+  .contact-email {
+    display: inline-block;
+    font-size: 18px;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(201, 168, 76, 0.3);
+    padding-bottom: 2px;
+    transition: border-color 0.3s;
+  }
+  
+  .contact-email:hover {
+    border-color: var(--accent);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 40px;
+    color: #444;
+    font-size: 12px;
+  }
+  
+  @media (max-width: 600px) {
+    .project-card { padding: 30px 20px; }
+    .project-card h3 { font-size: 28px; }
+  }
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-label">Screenwriter</div>
+  <h1>[NAME]</h1>
+  <p class="hero-sub">Features &amp; television. <strong>Previously pursued by CAA and WME.</strong> Four polished projects across sci-fi thriller, rom-com, dark comedy, and coming-of-age.</p>
+</section>
+
+<section class="projects">
+  <div class="projects-header">
+    <h2>Projects</h2>
+    <p>Available screenplays and pilots</p>
+  </div>
+  
+  <!-- QUIETUS -->
+  <div class="project-card">
+    <div class="project-meta">
+      <span class="project-tag genre">Sci-Fi Thriller</span>
+      <span class="project-tag">Feature / Limited Series</span>
+      <span class="project-tag">121 Pages</span>
+    </div>
+    <h3>QUIETUS</h3>
+    <div class="project-logline">When U.S. domination lies in the unquestioned extermination of Americans sixty and older, one CEO discovers his company built the machine — and must decide whether to run or burn it all down.</div>
+    <div class="project-synopsis">
+      <p>During a devastating depression, America enacts the Quietus — mandatory death at 60 — transforming the nation into a youthful superpower while the world rots. Benjamin Braverly, the new CEO of Winchester Finance, believes the Resistance killed his family. He's wrong about everything. When Winchester puts a hit on their own CEO, Benjamin flees into the extermination facilities he helped run — and emerges as the rebellion's most dangerous weapon.</p>
+    </div>
+    <div class="project-comps">
+      <span class="comp">Logan's Run</span>
+      <span class="comp">Mission: Impossible</span>
+      <span class="comp">Gattaca</span>
+      <span class="comp">Children of Men</span>
+    </div>
+  </div>
+  
+  <!-- DOUGHNUT SUNDAY -->
+  <div class="project-card">
+    <div class="project-meta">
+      <span class="project-tag genre">Dramedy</span>
+      <span class="project-tag">TV Pilot</span>
+      <span class="project-tag">54 Pages</span>
+    </div>
+    <h3>DOUGHNUT SUNDAY</h3>
+    <div class="project-logline">When church parishioners get fed up with the crime in their small town, they form a vigilante group — inflicting justice according to what the Bible allows them. What could possibly go wrong?</div>
+    <div class="project-synopsis">
+      <p>Set in a steel town frozen in the 1950s, a Catholic parish decides to take the law into their own hands — within biblical guidelines, of course. It's a coming-of-age story for Holden and Mary Catherine, a survival story for Mrs. Opal (whose husband's at war), and pure comedic chaos for everyone else. Think nativity-costume disguises, "holy water" that's actually gasoline, and a second collection plate funding covert operations.</p>
+    </div>
+    <div class="project-comps">
+      <span class="comp">Parks and Recreation</span>
+      <span class="comp">The Righteous Gemstones</span>
+      <span class="comp">Justified</span>
+      <span class="comp">Fargo</span>
+    </div>
+  </div>
+  
+  <!-- STUCK -->
+  <div class="project-card">
+    <div class="project-meta">
+      <span class="project-tag genre">Romantic Comedy</span>
+      <span class="project-tag">Feature</span>
+      <span class="project-tag">96 Pages</span>
+    </div>
+    <h3>STUCK</h3>
+    <div class="project-logline">Stop the divorce — they've run out of money!</div>
+    <div class="project-synopsis">
+      <p>Tyler and Vivi are ten years married when everything implodes. A wham-bam divorce filing gets frozen by a job crisis and $20K missing from their account, forcing them to cohabitate through the wreckage. Tyler stumbles between saving his marriage and saving his career. Vivi discovers the culinary world — and a version of herself her marriage never allowed. With the help of their deeply unhelpful best friends, both learn that love isn't about holding on. It's about knowing when to let go.</p>
+    </div>
+    <div class="project-comps">
+      <span class="comp">The War of the Roses</span>
+      <span class="comp">The Break-Up</span>
+      <span class="comp">Crazy, Stupid, Love</span>
+    </div>
+  </div>
+  
+  <!-- SCAVENGERS -->
+  <div class="project-card">
+    <div class="project-meta">
+      <span class="project-tag genre">Coming-of-Age</span>
+      <span class="project-tag">Feature</span>
+      <span class="project-tag">114 Pages</span>
+    </div>
+    <h3>SCAVENGERS</h3>
+    <div class="project-logline">Becoming an adult at 18 isn't easy — especially when it involves police chases, sociopathic girlfriends, stabbings (not a 911 kinda stabbing, more of a "quiet Sunday night" kinda stabbing), abandoned houses, and a city-wide scavenger hunt.</div>
+    <div class="project-synopsis">
+      <p>On the last night of his house arrest, 18-year-old Benji watches his friends leave for college while he can't even get accepted. After catching his psychotic girlfriend cheating, stabbing his mom's boyfriend, and fleeing to an abandoned house in the woods, he somehow finds a path forward — only to have it demolished by his nemesis Troy. The deal: win a city-wide scavenger hunt or lose everything. The cost: jumping off a hundred-foot bridge from a moving train. The ending: a burned-down house and a Marine Corps pamphlet.</p>
+    </div>
+    <div class="project-comps">
+      <span class="comp">Stand By Me</span>
+      <span class="comp">Superbad</span>
+      <span class="comp">Mid90s</span>
+      <span class="comp">The Way Way Back</span>
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <h2>About</h2>
+  <p>Screenwriter with multiple polished features and pilots spanning sci-fi, dark comedy, rom-com, and coming-of-age. <span class="highlight">Previously pursued by CAA and WME.</span> Scripts have advanced to final consideration at major agencies.</p>
+  <p>Writing that punches above its weight — high-concept hooks with characters you actually give a damn about.</p>
+</section>
+
+<section class="contact">
+  <h2>Get In Touch</h2>
+  <p>Interested in reading a script? Representation inquiries welcome.</p>
+  <a href="mailto:[EMAIL]" class="contact-email">[EMAIL]</a>
+</section>
+
+<footer>
+  &copy; 2026 [NAME]. All scripts registered. All rights reserved.
+</footer>
+
+</body>
+</html>

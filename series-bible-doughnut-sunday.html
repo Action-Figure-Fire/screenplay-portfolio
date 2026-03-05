@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOUGHNUT SUNDAY — Series Bible</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: 'Inter', sans-serif; background: #0a0a0a; color: #e0e0e0; }
+  
+  .page { max-width: 800px; margin: 0 auto; padding: 60px 50px; }
+  
+  .cover {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid rgba(201,168,76,0.2);
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+  }
+  
+  .cover-label {
+    font-size: 11px; font-weight: 600; letter-spacing: 4px;
+    text-transform: uppercase; color: #c9a84c; margin-bottom: 30px;
+  }
+  
+  .cover h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 56px; font-weight: 900; color: #fff;
+    margin-bottom: 12px; line-height: 1.05;
+  }
+  
+  .cover-sub {
+    font-size: 16px; color: #888; letter-spacing: 3px;
+    text-transform: uppercase; font-weight: 300; margin-bottom: 40px;
+  }
+  
+  .cover-logline {
+    font-size: 20px; font-style: italic; color: #c9a84c;
+    border-left: 3px solid #c9a84c; padding-left: 20px;
+    line-height: 1.6; margin-bottom: 30px;
+  }
+  
+  .cover-meta { font-size: 14px; color: #666; line-height: 1.8; }
+  .cover-meta strong { color: #aaa; }
+  
+  /* Section styling */
+  .section { margin-bottom: 60px; }
+  
+  .section-num {
+    font-size: 11px; font-weight: 600; letter-spacing: 4px;
+    text-transform: uppercase; color: #c9a84c; margin-bottom: 8px;
+  }
+  
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px; color: #fff; margin-bottom: 24px;
+  }
+  
+  h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px; color: #e0e0e0; margin: 30px 0 12px;
+  }
+  
+  p { font-size: 15px; line-height: 1.8; color: #bbb; margin-bottom: 16px; }
+  p strong { color: #e0e0e0; }
+  
+  .char-card {
+    background: rgba(201,168,76,0.04);
+    border: 1px solid rgba(201,168,76,0.12);
+    padding: 24px; margin-bottom: 16px;
+  }
+  
+  .char-card h4 {
+    font-size: 16px; font-weight: 600; color: #c9a84c;
+    margin-bottom: 4px; letter-spacing: 1px;
+  }
+  
+  .char-card .role {
+    font-size: 12px; color: #888; text-transform: uppercase;
+    letter-spacing: 2px; margin-bottom: 12px;
+  }
+  
+  .char-card p { font-size: 14px; margin-bottom: 8px; }
+  
+  .episode-block {
+    border-left: 3px solid rgba(201,168,76,0.2);
+    padding: 20px 24px; margin-bottom: 24px;
+    background: rgba(255,255,255,0.02);
+  }
+  
+  .episode-block .ep-num {
+    font-size: 11px; font-weight: 600; letter-spacing: 3px;
+    text-transform: uppercase; color: #c9a84c; margin-bottom: 6px;
+  }
+  
+  .episode-block h4 {
+    font-size: 18px; color: #fff; margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .episode-block p { font-size: 14px; color: #aaa; }
+  
+  .tone-grid {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 16px;
+    margin: 20px 0;
+  }
+  
+  .tone-item {
+    padding: 16px;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.06);
+  }
+  
+  .tone-item .label {
+    font-size: 10px; font-weight: 600; letter-spacing: 2px;
+    text-transform: uppercase; color: #666; margin-bottom: 6px;
+  }
+  
+  .tone-item .value { font-size: 14px; color: #ccc; }
+  
+  .divider {
+    width: 60px; height: 1px; background: rgba(201,168,76,0.3);
+    margin: 50px 0;
+  }
+  
+  .footer {
+    text-align: center; padding: 40px 0;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    margin-top: 60px;
+  }
+  
+  .footer p { color: #444; font-size: 13px; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<!-- COVER -->
+<div class="cover">
+  <div class="cover-label">Series Bible</div>
+  <h1>DOUGHNUT<br>SUNDAY</h1>
+  <div class="cover-sub">One-Hour Dramedy Pilot</div>
+  <div class="cover-logline">
+    When church parishioners get fed up with the crime in their small town, they form a vigilante group — inflicting justice according to what the Bible allows them. What could possibly go wrong?
+  </div>
+  <div class="cover-meta">
+    <strong>Format:</strong> One-Hour Dramedy (54-page pilot)<br>
+    <strong>Setting:</strong> A small Catholic steel town, frozen in the 1950s<br>
+    <strong>Tone:</strong> Parks and Recreation × The Righteous Gemstones × Justified<br>
+    <strong>Written by:</strong> [NAME]<br>
+    <strong>Contact:</strong> [EMAIL]
+  </div>
+</div>
+
+<!-- SECTION 1: THE SHOW -->
+<div class="section">
+  <div class="section-num">Section One</div>
+  <h2>The Show</h2>
+  
+  <p><strong>DOUGHNUT SUNDAY</strong> is a multi-layered dramedy set in a rust-belt steel town that never quite made it out of the Eisenhower era. At its center is a Catholic parish — the kind where the coffee is bad, the gossip is good, and everyone knows which pew belongs to whom.</p>
+  
+  <p>When crime starts bleeding into their neighborhoods, a group of parishioners decides the police aren't enough. Neither is prayer. So they do what any reasonable group of God-fearing Catholics would do: they form a vigilante group. The catch? They will only inflict justice that the Bible explicitly allows. No murder. No stealing. Just... creative interpretation of scripture applied with righteous enthusiasm.</p>
+  
+  <p>But DOUGHNUT SUNDAY isn't just a show about a church-based vigilante squad. That's the hook. The show is about <strong>community, identity, faith, and the beautiful absurdity of people trying to do good in the messiest possible way.</strong></p>
+  
+  <h3>Why This Show, Why Now</h3>
+  <p>America is experiencing a crisis of community. Churches are emptying. Small towns are dying. And everyone's angry about crime but nobody agrees on solutions. DOUGHNUT SUNDAY takes all of that tension and wraps it in comedy — holding up a funhouse mirror to our cultural moment while delivering genuine emotional stakes.</p>
+  
+  <p>The show lives in the same space as <strong>Justified</strong> (working-class America taken seriously), <strong>Parks and Recreation</strong> (community as comedy engine), and <strong>Fargo</strong> (ordinary people in extraordinary criminal situations). It's grounded enough to make you care and absurd enough to make you laugh out loud.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 2: TONE -->
+<div class="section">
+  <div class="section-num">Section Two</div>
+  <h2>Tone &amp; World</h2>
+  
+  <div class="tone-grid">
+    <div class="tone-item">
+      <div class="label">Comedy</div>
+      <div class="value">60% — Absurdist situations, Catholic culture comedy, fish-out-of-water chaos</div>
+    </div>
+    <div class="tone-item">
+      <div class="label">Drama</div>
+      <div class="value">40% — Real stakes, real consequences, characters you root for</div>
+    </div>
+    <div class="tone-item">
+      <div class="label">Visual Palette</div>
+      <div class="value">Warm amber interiors (church), cold blue exteriors (steel town), neon at night (crime)</div>
+    </div>
+    <div class="tone-item">
+      <div class="label">Music</div>
+      <div class="value">Hymns repurposed as heist music. Organ scoring action sequences. Gospel meets Morricone.</div>
+    </div>
+  </div>
+  
+  <h3>The World</h3>
+  <p>The town is a character. A steel-country borough where the mill closed but the bars didn't. Where Friday fish fries are sacred and everybody's grandmother makes the best nut roll. The church is the beating heart — not just spiritually, but socially, economically, and now... tactically.</p>
+  
+  <p>Every Catholic trope is a comedy goldmine and a storytelling device:</p>
+  <p>• The <strong>second collection</strong> funds their operations<br>
+  • At the <strong>sign of peace</strong>, secret mission plans are exchanged<br>
+  • After mass, they speak at the <strong>podium in vague missionary terms</strong> to fundraise — confusing the congregation, who donates anyway<br>
+  • Their <strong>disguises</strong> come from the nativity play costume closet<br>
+  • They feed homemade <strong>nut rolls to suspects</strong> with severe nut allergies<br>
+  • They bless hoodlums with <strong>"holy water"</strong> — until one bottle turns out to be gasoline. BOOM. Drug house gone.<br>
+  • They eventually <strong>convert a gang member</strong>. When he kneels to pray, it physically tortures him. The parishioners weep tears of joy as he writhes.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 3: CHARACTERS -->
+<div class="section">
+  <div class="section-num">Section Three</div>
+  <h2>Characters</h2>
+  
+  <div class="char-card">
+    <h4>HOLDEN</h4>
+    <div class="role">Series Lead — The Lens</div>
+    <p>Young, sharp, skeptical. Holden is our way into this world. He sees the church the way the audience does at first — picking the low-hanging fruit, laughing at the absurdity. But slowly, episode by episode, he begins to see the beauty beneath the silliness. Even Catholics will appreciate his journey, because he's laughing <em>with</em> them, not at them.</p>
+    <p><strong>Arc:</strong> Begins as an outsider mocking the institution → befriends Mr. Opal → discovers St. Augustine → finds his calling in the church itself. The audience expects military. They get seminary.</p>
+  </div>
+  
+  <div class="char-card">
+    <h4>MARY CATHERINE</h4>
+    <div class="role">Series Lead — The Heart</div>
+    <p>Holden's counterpart but from a completely different world. Where Holden is skeptical, Mary Catherine is faithful but conflicted. Together they represent the generational question of the show: can faith survive contact with reality?</p>
+    <p><strong>Arc:</strong> The coming-of-age parallel to Holden. Different background, same question: "What's next?"</p>
+  </div>
+  
+  <div class="char-card">
+    <h4>MRS. OPAL</h4>
+    <div class="role">The Backbone</div>
+    <p>Husband at war. Daughter growing up. Neighborhood falling apart. Mrs. Opal is the emotional engine of the show — the character who carries the weight while everyone else gets to be funny. If she doesn't hold it together, her husband won't have anything to come back to.</p>
+    <p><strong>Arc:</strong> Survival story. The question isn't whether she'll break — it's what she'll become when she bends.</p>
+  </div>
+  
+  <div class="char-card">
+    <h4>MR. OPAL</h4>
+    <div class="role">The Mentor (Absent/Present)</div>
+    <p>At war for most of Season 1, but his presence looms large. Through letters, flashbacks, and his wife's determination, Mr. Opal becomes the moral compass. His relationship with Holden — when it develops — redirects Holden's entire trajectory.</p>
+  </div>
+  
+  <div class="char-card">
+    <h4>THE VIGILANTES FOR JESUS</h4>
+    <div class="role">The Ensemble</div>
+    <p>The church group turned crime-fighting unit. A rotating cast of parishioners — each with their own reason for joining, their own interpretation of scripture, and their own wildly inappropriate skill set. Think a church potluck committee that accidentally became a paramilitary organization.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 4: PILOT -->
+<div class="section">
+  <div class="section-num">Section Four</div>
+  <h2>Pilot Summary</h2>
+  
+  <p>Episode one plays heavily on the church's tropes, all witnessed through Holden's eyes. We meet the parish in its natural habitat — Sunday mass, the rituals, the gossip, the doughnuts after service. Through Holden, we see both the comedy and the cracks: the neighborhood is changing, crime is creeping in, and the congregation is angry.</p>
+  
+  <p>When a break-in hits too close to home, a small group of parishioners decides to act. The pilot builds to their first "operation" — armed with scripture, nativity costumes, and a plan that goes spectacularly sideways. By the end of the hour, we understand the show's engine: these people are in way over their heads, they're never going to stop, and it's going to be glorious.</p>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 5: SEASON 1 EPISODES -->
+<div class="section">
+  <div class="section-num">Section Five</div>
+  <h2>Season One — Episode Guide</h2>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 1</div>
+    <h4>"Doughnut Sunday"</h4>
+    <p>Pilot. We meet the parish, the town, and the crime that's eating it alive. Through Holden's outsider eyes, we see the church in all its absurd beauty. When a violent break-in rocks the congregation, a small group decides to take matters into their own hands — biblically. Their first "mission" is a holy disaster.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 2</div>
+    <h4>"The Second Collection"</h4>
+    <p>The Vigilantes for Jesus need funding. Their solution: a second collection plate. But explaining what it's for without actually explaining it proves impossible. Meanwhile, Mrs. Opal receives a letter from her husband that changes everything. Holden begins to question why he's sticking around.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 3</div>
+    <h4>"Sign of Peace"</h4>
+    <p>The group refines their operation — passing mission plans during the sign of peace. Their second outing is more organized but the target fights back. One of them gets hurt. The group faces its first real crisis: are they in too deep? Mary Catherine starts asking questions.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 4</div>
+    <h4>"Nut Rolls"</h4>
+    <p>The group tries subtler tactics — including deploying homemade nut rolls against a suspect with severe allergies. It works, horrifyingly well. Meanwhile, Holden and Mary Catherine's paths cross in a meaningful way. Mrs. Opal's daughter acts out, and we see the cracks in her composure.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 5</div>
+    <h4>"Holy Water"</h4>
+    <p>The group's most ambitious operation yet goes nuclear when someone grabs the wrong bottle. A drug house burns to the ground. The town is shaken. The group is terrified. And for the first time, they consider disbanding. But the neighborhood is actually safer — and the congregation notices.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 6</div>
+    <h4>"Too Strict"</h4>
+    <p>The biblical restrictions are becoming a problem. The group realizes the Catholic Bible limits their options. Their solution: recruit the Presbyterians, whose scriptural flexibility might allow for... expanded operations. A hilarious interfaith negotiation ensues. Holden begins spending time with Mr. Opal (via letters/phone).</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 7</div>
+    <h4>"City Council"</h4>
+    <p>The group decides to go legitimate — taking their fight to city council. It's an absolute disaster. Bureaucracy, indifference, and Robert's Rules of Order defeat them more thoroughly than any gang ever could. Masks go back on. But the mayor's neighborhood is gated.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 8</div>
+    <h4>"The Convert"</h4>
+    <p>Against all odds, they convert a gang member. His first mass is both the funniest and most emotionally devastating scene of the season — kneeling in physical agony while the parishioners weep with joy. Mrs. Opal gets news about her husband. Holden finds a book by St. Augustine that changes his trajectory.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 9</div>
+    <h4>"Missionaries"</h4>
+    <p>The group's podium fundraising speech — delivered in impossibly vague missionary language — becomes a sensation. Money pours in. Power corrupts. The group splits over how far to take it. Mary Catherine and Holden have a confrontation about faith, purpose, and growing up.</p>
+  </div>
+  
+  <div class="episode-block">
+    <div class="ep-num">Episode 10</div>
+    <h4>"What's Next?"</h4>
+    <p>Season finale. Mr. Opal returns. The gang retaliates. Everything converges on a Sunday service that becomes a reckoning — for the Vigilantes, for Holden, for the town. Holden's path is revealed: not the military, but the seminary. The vigilante group doesn't disband — they evolve. And the question that started the season answers itself: what could possibly go wrong? Everything. And that's the point.</p>
+  </div>
+</div>
+
+<div class="divider"></div>
+
+<!-- SECTION 6: BEYOND -->
+<div class="section">
+  <div class="section-num">Section Six</div>
+  <h2>Series Potential</h2>
+  
+  <p>DOUGHNUT SUNDAY is designed for longevity. The vigilante engine provides infinite episodic stories while the character arcs provide serialized depth. Each season can introduce:</p>
+  
+  <p>• <strong>New threats</strong> — escalating criminal elements forcing the group to adapt<br>
+  • <strong>New members</strong> — expanding the ensemble with fresh voices and faiths<br>
+  • <strong>Interfaith expansion</strong> — the Presbyterian alliance opens doors to other denominations, each with their own rules and personalities<br>
+  • <strong>Holden's journey</strong> — from skeptic to seminarian to priest, with all the comedy and drama that entails<br>
+  • <strong>National attention</strong> — eventually, the Vigilantes for Jesus can't stay secret. What happens when a small-town church group becomes a national story?</p>
+  
+  <p>The show can sustain <strong>4-6 seasons</strong>, with each season escalating the stakes while deepening the characters. The tone flexes from pure comedy to genuine drama — never losing either, always finding the balance between laughter and meaning.</p>
+</div>
+
+<div class="footer">
+  <p>[NAME] &bull; [EMAIL] &bull; All rights reserved &copy; 2026</p>
+</div>
+
+</div>
+</body>
+</html>
